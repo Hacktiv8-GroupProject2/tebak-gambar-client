@@ -1,28 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 
 body{
-  pading:0;
+  padding:0;
   margin:0;  
+  /* from login */
+  background-color: #E9D234;
 }
 .two-row-container{
   display: grid;
   grid-template-rows: 90px 40% auto;
   height: 100vh;  
-  background-color:#f2f2f2;
+  /* background-color:#f2f2f2; */
   font-family: 'Carter One', cursive;
   color: #000;
 }
-.soal-header{
+/* .soal-header{
   background-color: #fff;
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-}
+} */
 .soal{
-  background-color:#f2f2f2;
+  /* background-color:#f2f2f2; */
   font-family: 'Carter One', cursive;
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
   justify-content:center;
+  /* amy nambahin */
+  margin-top: 50px;
 }
 .soal-logo{  
   display: flex;
@@ -31,7 +35,8 @@ body{
   justify-content: center;
 }
 .soal-logo > img{
-  width: 500px;
+  /* width: 500px; */
+  max-width: 500px;
 }
 .logo-letters{
   margin-top: 1rem;
@@ -40,8 +45,10 @@ body{
 .logo-letter{
   width: 40px;
   font-size: 18pt;
-  background-color: #000;
-  color: white;
+  /* background-color: #000; */
+  background-color: white;
+  /* color: white; */
+  color: #333333;
   margin-right: 10px;
 }
 
@@ -49,8 +56,8 @@ body{
 .player{  
   display: flex;  
   flex-direction: row;
-  
   justify-content: center;
+  margin-top: 130px;
 }
 .player-card{
   display: flex;
@@ -60,7 +67,9 @@ body{
   padding:1rem;
   border-radius: 10px;  
   margin-right: 1rem;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: #333333;
+  color: white;
 }
 
 
@@ -84,4 +93,52 @@ body{
     0%{background-position:0% 82%}
     50%{background-position:100% 19%}
     100%{background-position:0% 82%}
+}
+
+/* login */
+
+.row {
+  height: 100vh;
+  width: 100%;
+  margin-top: 13%;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+h1 {
+   font-family: 'Carter One', cursive;
+   font-size: 100px;
+   color: white;
+   text-align: center;
+   margin: 0 auto;
+}
+
+#username {
+   width: 40%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+   font-family: 'Carter One', cursive;
+   text-align: center;
+}
+
+button {
+   background-color: #333333;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   cursor: pointer;
+   width: 40%;
+   font-family: 'Carter One', cursive;
+}
+ 
+button:hover {
+   opacity: 0.8;
 }

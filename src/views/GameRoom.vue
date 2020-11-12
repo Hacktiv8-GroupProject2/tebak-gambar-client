@@ -1,59 +1,43 @@
 <template>
   <div class="two-row-container">
     <div class="soal-header">
-      <h1>TEBAK LOGO</h1>
+      <h1>Tebak Logo</h1>
     </div>
     <div class="soal">
       <div class="counter">
         123
       </div>
       <div class="soal-logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/1200px-Logo_of_YouTube_%282015-2017%29.svg.png" alt="">
+        <img src="https://i.imgur.com/w5AOsXU.jpg" alt="">
+        <!-- ceritanya logonya ada 3 Letter -->
         <div class="logo-letters">
-          <div class="logo-letter">
-            A
-          </div>
-          <div class="logo-letter">
-            A
-          </div>
-          <div class="logo-letter">
-            A
-          </div>
+          <LogoLetter/>
+          <LogoLetter/>
+          <LogoLetter/>
         </div>
       </div>
       <div class="score-board">
       </div>
     </div>
     <div class="player">
-      <div class="player-card">
-        <div class="score">
-          10
-        </div>
-        <div class="player-name">
-          <h2>Sikomo</h2>
-        </div>
-      </div>
-      <div class="player-card">
-        <div class="player-name">
-          <h2>Sikomo</h2>
-        </div>
-      </div>
-      <div class="player-card">
-        <div class="player-name">
-          <h2>Sikomo</h2>
-        </div>
-      </div>
-      <div class="player-card">
-        <div class="player-name">
-          <h2>Sikomo</h2>
-        </div>
-      </div>
+      <!-- ceritanya ada 4 player -->
+      <PlayerCard/>
+      <PlayerCard/>
+      <PlayerCard/>
+      <PlayerCard/>
     </div>
   </div>
 </template>
 
 <script>
+import PlayerCard from '../components/PlayerCard'
+import LogoLetter from '../components/LogoLetter'
+
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: {
+    PlayerCard,
+    LogoLetter
+  }
 }
 </script>
