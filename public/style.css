@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+body{
+  pading:0;
+  margin:0;  
+}
+.two-row-container{
+  display: grid;
+  grid-template-rows: 90px 40% auto;
+  height: 100vh;  
+  background-color:#f2f2f2;
+  font-family: 'Carter One', cursive;
+  color: #000;
+}
+.soal-header{
+  background-color: #fff;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+.soal{
+  background-color:#f2f2f2;
+  font-family: 'Carter One', cursive;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  justify-content:center;
+}
+.soal-logo{  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.soal-logo > img{
+  width: 500px;
+}
+.logo-letters{
+  margin-top: 1rem;
+  display: inline-flex;
+}
+.logo-letter{
+  width: 40px;
+  font-size: 18pt;
+  background-color: #000;
+  color: white;
+  margin-right: 10px;
+}
+
+
+.player{  
+  display: flex;  
+  flex-direction: row;
+  
+  justify-content: center;
+}
+.player-card{
+  display: flex;
+  flex-grow: 0;
+  flex-direction: column;
+  height: 100px;
+  padding:1rem;
+  border-radius: 10px;  
+  margin-right: 1rem;
+  background-color: #fff;
+}
+
+
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
