@@ -21,10 +21,10 @@
     </div>
     <div class="player">
       <!-- ceritanya ada 4 player -->
-      <PlayerCard/>
-      <PlayerCard/>
-      <PlayerCard/>
-      <PlayerCard/>
+      <PlayerCard name="sikomo" score=2></PlayerCard>
+      <PlayerCard name="sibudi" score=15></PlayerCard>
+      <PlayerCard name="siandi" score=5></PlayerCard>
+      <PlayerCard name="sikamp" score=66></PlayerCard>
     </div>
   </div>
 </template>
