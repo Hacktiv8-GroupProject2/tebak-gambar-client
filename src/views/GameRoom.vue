@@ -89,10 +89,4 @@ export default {
 }
 </script>
 <style scoped>
-.countdown {
-  position: absolute;
-  top: 50%;
-  right: 20%;
-}
-
 </style>

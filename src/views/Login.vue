@@ -40,8 +40,8 @@ export default {
 
     playSound (sound) {
       if (sound) {
-        var audio = new Audio(sound);
-        audio.play();
+        var audio = new Audio(sound)
+        audio.play()
       }
     }
   }

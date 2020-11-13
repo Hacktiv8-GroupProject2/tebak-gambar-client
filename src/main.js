@@ -5,7 +5,8 @@ import store from './store'
 import VueSocketIOExt from 'vue-socket.io-extended'
 import io from 'socket.io-client'
 
-const socket = io('http://localhost:3000/', { transports: ['websocket'] })
+// const socket = io('http://localhost:3000/', { transports: ['websocket'] })
+const socket = io('https://teblog-server.herokuapp.com/', { transports: ['websocket'] })
 
 Vue.use(VueSocketIOExt, socket)
 Vue.config.productionTip = false
