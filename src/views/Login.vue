@@ -5,6 +5,7 @@
         <form @submit.prevent="login">
             <input type="text" placeholder="Enter Username" id="username" name="username" required v-model="username">
             <button class="btn btn-primary btn-sm"
+             @click="login"
              @click.prevent="playSound('http://soundbible.com/mp3/Elevator Ding-SoundBible.com-685385892.mp3')"
              type="submit">Enter</button>
         </form>

@@ -5,7 +5,6 @@
     </div>
     <div class="soal">
       <div class="countdown">
-        <h3>Timer : {{ timer }}</h3>
       </div>
       <div class="soal-logo">
         <img :src=image alt="">
