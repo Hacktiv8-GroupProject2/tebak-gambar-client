@@ -5,7 +5,7 @@
     </div>
     <div class="soal">
       <div class="countdown">
-        <span class="box second-num"></span>
+        <h3>Timer : {{ timer }}</h3>
       </div>
       <div class="soal-logo">
         <img :src=image alt="">
@@ -81,5 +81,12 @@ export default {
   created () {
     this.$socket.client.emit('getQuestion')
   }
+  // methods: {
+  //   timer() {
+
+  //   }
+  // }
 }
 </script>
+<style scoped>
+</style>
