@@ -8,7 +8,7 @@
         <span class="box second-num"></span>
       </div>
       <div class="soal-logo">
-        <img src="https://i.imgur.com/w5AOsXU.jpg" alt="">
+        <img :src=image alt="">
         <!-- ceritanya logonya ada 3 Letter -->
         <div class="logo-letters">
           <LogoLetter/>
@@ -35,9 +35,23 @@ import LogoLetter from '../components/LogoLetter'
 
 export default {
   name: 'Home',
+  data () {
+    return {
+      image: ''
+    }
+  },
   components: {
     PlayerCard,
     LogoLetter
+  },
+  sockets: {
+    question (payload) {
+      this.image = payload
+    }
+  },
+  created () {
+    console.log('qwe')
+    this.$socket.client.emit('getQuestion')
   }
 }
 </script>
@@ -59,9 +73,9 @@ export default {
     font-family: grenze;
     font-weight: bold;
     color: rgb(248, 224,4);
-    border: 5px solid #262626;
+    border: 5px solid blue;
     border-radius: 25px;
-    box-shadow: 2px 1px 12px #262626;
+    box-shadow: 2px 1px 12px blue;
     margin: 0 10px;
     padding: 0 30px;
 }
@@ -71,6 +85,8 @@ export default {
     overflow: hidden;
     height: 1em;
     line-height: 1em;
+    font-weight: bold;
+    font-size: 16em;
 }
 .box.after {
     position: relative;
