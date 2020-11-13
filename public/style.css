@@ -40,7 +40,7 @@ body{
 }
 .soal-logo > img{
   /* width: 500px; */
-  max-width: 500px;
+  max-width: 300px;
   border: solid hsl(12, 61%, 38%);
   border-color: hsl(12, 61%, 28%);
   border-width: 10px 8px 5px 5px;
@@ -54,19 +54,44 @@ body{
   
 }
 .logo-letter{
+  display: block;
   box-shadow: 5px 5px 0px 0px hsl(249, 5%, 27%);
-  width: 40px;
+  min-width: 40px;
   font-size: 18pt;
   /* background-color: #000; */
   background-color: hsl(249, 5%, 47%);
   /* color: white; */
   color: #fff;
-  margin-right: 10px;
-  
+  margin-right: 10px;  
+}
+.space{
+  display: block;
+  min-width: 40px;
+  font-size: 18pt;
+  /* background-color: #000; */
+  background-color: rgba(116, 114, 126,0);
+  /* color: white; */
+  color: #fff;
+  margin-right: 10px;  
+}
+input[type=text]{
+  padding:1rem;
+  font-size: 16pt;
+  border: solid hsl(12, 61%, 38%);
+  border-color: hsl(12, 61%, 28%);
+  border-width: 10px 8px 5px 5px;
+  border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+  outline: none;
 }
 
 .player{  
   margin-top: 2rem;
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.players{
   display: flex;  
   flex-direction: row;
   justify-content: center;
@@ -97,6 +122,8 @@ body{
   box-shadow: 0px 5px 0px  hsl(12, 61%, 28%);
   border-radius: 10000px;    
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
 }
 .player-avatar>img{
   display: block;
