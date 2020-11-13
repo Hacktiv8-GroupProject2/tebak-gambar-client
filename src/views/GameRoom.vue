@@ -59,9 +59,9 @@ export default {
     font-family: grenze;
     font-weight: bold;
     color: rgb(248, 224,4);
-    border: 5px solid #262626;
+    border: 5px solid blue;
     border-radius: 25px;
-    box-shadow: 2px 1px 12px #262626;
+    box-shadow: 2px 1px 12px blue;
     margin: 0 10px;
     padding: 0 30px;
 }
@@ -71,6 +71,8 @@ export default {
     overflow: hidden;
     height: 1em;
     line-height: 1em;
+    font-weight: bold;
+    font-size: 16em;
 }
 .box.after {
     position: relative;
