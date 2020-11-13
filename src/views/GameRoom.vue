@@ -8,7 +8,7 @@
         <span class="box second-num"></span>
       </div>
       <div class="soal-logo">
-        <img src="https://i.imgur.com/w5AOsXU.jpg" alt="">
+        <img :src=image alt="">
         <!-- ceritanya logonya ada 3 Letter -->
         <div class="logo-letters">
           <LogoLetter/>
@@ -35,9 +35,23 @@ import LogoLetter from '../components/LogoLetter'
 
 export default {
   name: 'Home',
+  data () {
+    return {
+      image: ''
+    }
+  },
   components: {
     PlayerCard,
     LogoLetter
+  },
+  sockets: {
+    question (payload) {
+      this.image = payload
+    }
+  },
+  created () {
+    console.log('qwe')
+    this.$socket.client.emit('getQuestion')
   }
 }
 </script>
