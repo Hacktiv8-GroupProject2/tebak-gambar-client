@@ -18,9 +18,19 @@ export default {
       username: ''
     }
   },
+  sockets: {
+    connect () {
+      console.log('connected')
+    },
+    connected (payload) {
+      this.$store.commit('setCurrentUser', payload.current_player)
+      this.$store.commit('setPlayerLists', payload.player_list)
+      this.$router.push('/play')
+    }
+  },
   methods: {
     login () {
-      return this.username
+      this.$socket.client.emit('connected', { username: this.username })
     }
   }
 }
