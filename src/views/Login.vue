@@ -26,6 +26,9 @@ export default {
       this.$store.commit('setCurrentUser', payload.current_player)
       this.$store.commit('setPlayerLists', payload.player_list)
       this.$router.push('/play')
+    },
+    roomFull () {
+      console.log('ruangan penuh')
     }
   },
   methods: {

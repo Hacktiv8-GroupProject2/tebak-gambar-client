@@ -3,7 +3,6 @@ import VueRouter from 'vue-router'
 import GameRoom from '../views/GameRoom.vue'
 import store from '../store'
 
-
 Vue.use(VueRouter)
 
 const routes = [
