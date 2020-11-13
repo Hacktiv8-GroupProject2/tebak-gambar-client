@@ -74,9 +74,9 @@ export default {
       this.correct_answer = payload.answer.toLowerCase()
     },
     updatePlayers (payload) {
-      console.log(payload)
       this.$store.commit('setPlayerLists', payload)
     }
+
   },
   created () {
     this.$socket.client.emit('getQuestion')
