@@ -4,7 +4,9 @@
     <div class="column">
         <form @submit.prevent="login">
             <input type="text" placeholder="Enter Username" id="username" name="username" required v-model="username">
-            <button type="submit">Enter</button>
+            <button class="btn btn-primary btn-sm"
+             @click.prevent="playSound('http://soundbible.com/mp3/Elevator Ding-SoundBible.com-685385892.mp3')"
+             type="submit">Enter</button>
         </form>
     </div>
 </div>
@@ -34,6 +36,13 @@ export default {
   methods: {
     login () {
       this.$socket.client.emit('connected', { username: this.username })
+    },
+
+    playSound (sound) {
+      if (sound) {
+        var audio = new Audio(sound);
+        audio.play();
+      }
     }
   }
 }
