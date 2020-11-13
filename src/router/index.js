@@ -2,12 +2,13 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import GameRoom from '../views/GameRoom.vue'
 
+
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'GameRoom',
+    name: 'home',
     component: GameRoom
   },
   {
